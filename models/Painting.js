@@ -7,7 +7,7 @@ We declare our PaintingSchema by calling the mongoose schema constructor and pas
 const PaintingSchema = new Schema({
     name: String,
     url: String,
-    techniques: [String]
+    technique: String
 });
 /* We export the model and name it Painting */
 module.exports = mongoose.model('Painting', PaintingSchema);
